@@ -14,6 +14,7 @@ def scrape_page(title, con):
         cur = con.cursor()
         cur.execute("insert into entries (title, genre, id) VALUES(%s, %s, %s)",
                     (page.title, 'example', page.pageid))
+
         print "row count: " + str(cur.rowcount)
 
 
