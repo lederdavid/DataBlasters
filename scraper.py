@@ -6,6 +6,7 @@ import spotipy
 def scrape_page(title, con):
     page = wikipedia.page(title)
     print "title = " + page.title
+
     print "id = " + page.pageid
     # for category in page.categories:
     #     print "category =" + category
